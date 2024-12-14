@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOGO Offer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="outer-container">
+    <div class="container">
+      <!-- Title with horizontal lines -->
+      <h1 class="title">
+        <span>YAY! It's BOGO</span>
+      </h1>
+      <form id="bogo-form">
+        <!-- Option 1 -->
+        <div class="option">
+          <div class="row">
+            <div class="col radio">
+              <input type="radio" id="option1" name="bogo" value="10" onclick="toggleSection(1)" />
+            </div>
+            <div class="col description">
+              <div class="line">
+                <span class="unit">1 Unit</span>
+                <span class="discount">10% Off</span>
+              </div>
+              <div class="line">
+                <span class="desc">Standard Price</span>
+              </div>
+            </div>
+            <div class="col pricing">
+              <div class="line price">$10.00 USD</div>
+              <div class="line original">$24.00 USD</div>
+            </div>
+          </div>
+          <!-- Customization Section -->          
+          <div class="customization" id="customization-1">
+            <div class="subrow">
+              <div class="col header"></div>
+              <div class="col header">Size</div>
+              <div class="col header">Color</div>
+            </div>
+            <div class="subrow">
+              <div class="col">#1</div>
+              <div class="col">
+                <select id="size1-1">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div class="col">
+                <select id="color1-1">
+                  <option value="Black">Black</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Red">Red</option>
+                </select>
+              </div>
+            </div>
+            <div class="subrow">
+                <div class="col">#2</div>
+                <div class="col">
+                  <select id="size1-1">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <select id="color1-1">
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                  </select>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Option 2 -->
+        <div class="option">
+          <div class="row">
+            <div class="col radio">
+              <input type="radio" id="option2" name="bogo" value="18" onclick="toggleSection(2)" />
+            </div>
+            <div class="col description">
+              <div class="line">
+                <span class="unit">2 Unit</span>
+                <span class="discount">20% Off</span>
+              </div>
+              <div class="line">
+                <span class="desc">20% Off</span>
+              </div>
+            </div>
+            <div class="col pricing">
+              <div class="line price">$18.00 USD</div>
+              <div class="line original">$24.00 USD</div>
+            </div>
+          </div>
+          <!-- Customization Section -->
+          <div class="customization" id="customization-2">
+            <div class="subrow">
+              <div class="col header"></div>
+              <div class="col header">Size</div>
+              <div class="col header">Color</div>
+            </div>
+            <div class="subrow">
+              <div class="col">#1</div>
+              <div class="col">
+                <select id="size1-1">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div class="col">
+                <select id="color1-1">
+                  <option value="Black">Black</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Red">Red</option>
+                </select>
+              </div>
+            </div>
+            <div class="subrow">
+                <div class="col">#2</div>
+                <div class="col">
+                  <select id="size1-1">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <select id="color1-1">
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                  </select>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Option 3 -->
+        <div class="option">
+          <div class="row">
+            <div class="col radio">
+              <input type="radio" id="option3" name="bogo" value="24" onclick="toggleSection(3)" />
+            </div>
+            <div class="col description">
+              <div class="line">
+                <span class="unit">3 Unit</span>
+                <span class="discount">30% Off</span>
+              </div>
+              <div class="line"></div>
+            </div>
+            <div class="col pricing">
+              <div class="line price">$24.00 USD</div>
+              <div class="line original">$24.00 USD</div>
+            </div>
+          </div>
+          <!-- Customization Section -->
+          <div class="customization" id="customization-3">
+            <div class="subrow">
+              <div class="col header"></div>
+              <div class="col header">Size</div>
+              <div class="col header">Color</div>
+            </div>
+            <div class="subrow">
+              <div class="col">#1</div>
+              <div class="col">
+                <select id="size1-1">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div class="col">
+                <select id="color1-1">
+                  <option value="Black">Black</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Red">Red</option>
+                </select>
+              </div>
+            </div>
+            <div class="subrow">
+                <div class="col">#3</div>
+                <div class="col">
+                  <select id="size1-1">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <select id="color1-1">
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                  </select>
+                </div>
+              </div>
+          </div>
+        </div>
+      </form>
+
+         <!-- Free Delivery and Total Section -->
+<div class="summary">
+    <p class="delivery">Free Delivery</p>
+    <p>Total: <span id="total">$18.00 USD</span></p>
+</div>
+<button type="button" class="add-to-cart">+ Add to Cart</button>
+<p class="powered-by">@Powered by Pumper</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
